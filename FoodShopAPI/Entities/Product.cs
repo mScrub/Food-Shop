@@ -1,7 +1,8 @@
-namespace FoodShopAPI.Entities;
-
-public class Product
+namespace FoodShopAPI.Entities
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 }
