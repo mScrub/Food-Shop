@@ -16,7 +16,7 @@ namespace FoodShopAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public string GetProduct()
+        public string GetProduct(int id)
         {
             return "individual product";
         }
