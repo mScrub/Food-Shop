@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodShopAPI", "FoodShopAPI\FoodShopAPI.csproj", "{970BC4F9-93E1-4E24-9485-2891BD50310B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{C91097F2-A52B-436A-950C-51B91AB8958A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{83F340E9-95BD-4BC0-AED5-C2AFD107E2B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{970BC4F9-93E1-4E24-9485-2891BD50310B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970BC4F9-93E1-4E24-9485-2891BD50310B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970BC4F9-93E1-4E24-9485-2891BD50310B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91097F2-A52B-436A-950C-51B91AB8958A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91097F2-A52B-436A-950C-51B91AB8958A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91097F2-A52B-436A-950C-51B91AB8958A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91097F2-A52B-436A-950C-51B91AB8958A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F340E9-95BD-4BC0-AED5-C2AFD107E2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F340E9-95BD-4BC0-AED5-C2AFD107E2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F340E9-95BD-4BC0-AED5-C2AFD107E2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F340E9-95BD-4BC0-AED5-C2AFD107E2B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
