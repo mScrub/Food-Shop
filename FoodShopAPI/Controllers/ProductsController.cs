@@ -1,5 +1,8 @@
 
+using Core.Entities;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.ObjectPool;
 
 
 namespace FoodShopAPI.Controllers
@@ -8,17 +11,24 @@ namespace FoodShopAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        private readonly IProductRepository _repo;
+        public ProductsController(IProductRepository repo)
+        {
+            _repo = repo;
+        }
 
         [HttpGet]
-        public string GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            return "test products";
+            var products = await _repo.GetProductsAsync();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public string GetProduct(int id)
+        public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            return "individual product";
+            var product = await _repo.GetProductByIdAsync(id);
+            return Ok(product);
         }
 
 
