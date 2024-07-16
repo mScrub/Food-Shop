@@ -1,8 +1,8 @@
-using FoodShopAPI.Entities;
+using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace FoodShopAPI.Data
+namespace Infrastructure.Data
 {
     public class StoreContext : DbContext
     {
